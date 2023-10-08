@@ -170,3 +170,8 @@ sudo journalctl -a | grep COMMAND
 * Destroy files and subdirectories
   * shred
   * bleachbit
+* some pages
+  * <https://kali.org/>
+  * <https://www.kali.org/docs/>
+  * <https://www.kali.org/tools/all-tools/>
+  * <https://offensive-security.com/>
