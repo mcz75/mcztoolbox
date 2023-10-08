@@ -38,6 +38,7 @@ netstat -lntu
 ```
 
 ## Kali
+From pluralsight 2023-10
 
 ``` bash
 # wolne miejsce
@@ -68,4 +69,35 @@ sudo apt -y remove <package name>
 
 # usunięcie nieużywanych pakietów
 sudo apt autormemove
+```
+
+### Managing users
+
+```bash
+# add user
+sudo adduser pluralsight
+
+# change password for user
+sudo passwd pluralsight
+
+# change information about user
+sudo chfn pluralsight
+
+# change shell
+sudo chsh pluralsight
+
+# add user to a group
+sudo adduser pluralsight2 --ingroup pluralsight
+
+# add user to a sudo
+sudo usermod -a -G sudo pluralsight2
+
+# remove user account (leaves hoe and files)
+sudo deluser pluralsight
+
+# remove user with 
+sudo deluser --remove-home --remove-all-files pluralsight2
+
+# remove group
+sudo delgroup pluralsight
 ```
