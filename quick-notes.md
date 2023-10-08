@@ -101,3 +101,72 @@ sudo deluser --remove-home --remove-all-files pluralsight2
 # remove group
 sudo delgroup pluralsight
 ```
+
+### Managing services
+
+```bash
+
+# start service
+sudo service nginx start
+sudo service nginx stop
+sudo service nginx restart #configuration changes
+sudo service nginx status #not all services implement it
+
+# to see available command
+sudo service nginx
+
+# status of all services
+service --status-all
+
+# enabling service to start automaticaly with os, then one need to start it manualy or reboot
+sudo systemctl enable ssh
+```
+
+### xfce
+<https://www.xfce.org/>
+
+```shell
+# print shell
+echo $0 #/usr/bin/zsh
+
+# see possible session managers ??? maybe I will understand it in the future
+update-alternatives --config x-session-manager
+
+#change session manager
+sudo apt update
+sudo apt install -y kali-desktop-gnome
+update-alternatives --config x-session-manager
+
+# to remove possible conflicting things
+apt purge --autoremove kali-desktop-xfce
+reboot
+
+# install kali-linux on wsl
+wsl --install --distribution kali-linux
+# check
+wsl -l -v
+
+# check logs for user activity
+sudo journalctl -a | grep COMMAND
+```
+
+* hd encyption
+  * dm-crypt
+* firewall:
+  * ufw
+  * Fail2ban
+* internal scan
+  * netstat
+  * ss
+* external scan
+  * nmap
+* review logs
+  * snort
+* Malware scanners
+  * Chkrootkit
+  * ClamAV
+  * Lynis
+  * Rkhunter
+* Destroy files and subdirectories
+  * shred
+  * bleachbit
