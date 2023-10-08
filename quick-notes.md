@@ -38,7 +38,7 @@ netstat -lntu
 ```
 
 ## Kali
-From pluralsight 2023-10 <https://app.pluralsight.com/course-player?clipId=05a10a92-c0e7-439b-b41a-b0b93d9488fd>
+From pluralsight 2023-10 [Kali Linux Concepts and Basic Functionality](https://app.pluralsight.com/course-player?clipId=05a10a92-c0e7-439b-b41a-b0b93d9488fd)
 
 ``` bash
 # wolne miejsce
