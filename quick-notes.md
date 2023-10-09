@@ -175,3 +175,83 @@ sudo journalctl -a | grep COMMAND
   * <https://www.kali.org/docs/>
   * <https://www.kali.org/tools/all-tools/>
   * <https://offensive-security.com/>
+
+### Vulnerable systems
+* <https://www.vulnhub.com>
+* <https://sourceforge.net/projects/metasploitable>
+
+### DNS Analysis
+
+#### DNSRecon
+<https://www.kali.org/tools/dnsrecon/>
+
+```shell
+dnsrecon -h
+```
+
+#### DNSEnum
+<https://www.kali.org/tools/dnsenum/>
+
+ ```shell
+dnsenum -h
+ ```
+#### DNSMap
+Slowest, goes in subdomains
+<https://www.kali.org/tools/dnsmap/>
+
+### OSINT Analysis
+Open Source inteligence gathering
+
+#### Spiderfoot
+
+<https://www.kali.org/tools/spiderfoot>
+
+```shell
+spiderfoot -l <ip:port> -s target -m modules to run against target -o output type
+```
+#### theHarvester
+
+* <https://www.kali.org/tools/theharvester>
+* <https://gitlab.com/kalilinux/packages/theharvester>
+
+### Socian Engineering Attack
+
+#### setoolkit
+
+* <https://github.com/trustedsec/social-engineer-toolkit/raw/master/readme/User_Manual.pdf>
+
+### Life host Identification
+ARP scanning
+
+#### Netdiscover
+
+* <https://www.kali.org/tools/netdiscover/>
+
+#### arp-scan
+
+* <https://www.kali.org/tools/arp-scan/>
+
+#### arp-fingerprint
+
+### Network discovery
+
+#### NMap
+
+* <https://www.kali.org/tools/nmap/>
+* <https://nmap.org>
+* <https://nmap.org/book/toc>
+* <https://nmap.org/docs.html>
+
+Duże rozwiązanie, większe nisz samo Kali 
+* NMAP Network Scanning
+* NMAP Essentials
+* Nmap 7: From Beginner to Pro
+
+Virtualki do testowania
+* <https://www.vulnhub.com/entry/mr-robot-1,151>
+* <https://www.vulnhub.com/entry/metasploitable-2,29>
+
+```shell
+nmap -sV -p 21 192.168.1.53
+```
+
