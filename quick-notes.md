@@ -253,5 +253,20 @@ Virtualki do testowania
 
 ```shell
 nmap -sV -p 21 192.168.1.53
+
+#agressive scan
+nmap -A 192.168.1.53
+
+#execute scirpt
+nmap -script ftp-vstpd-backdoor -p 21 192.168.1.53
+
+#wcecute vuln scripts
+nmap -script vuln -oX # <filename> <IP address>
+nmap -script vuln -oX 53.xml 192.168.1.53
+
+#this should generate 53.xml file
+# convert it to html
+xsltproc <xml filne name> -o <new html file name>
+xsltproc 53.xml -o 53.html
 ```
 
