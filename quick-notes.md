@@ -4,24 +4,46 @@ Różne zapiski do używania, niesortowane.
 
 <https://github.com/pmckeown/dependency-track-maven-plugin#readme>
 
+```shell 
 mvn io.github.pmckeown:dependency-track-maven-plugin:upload-bom \
   -Ddependency-track.dependencyTrackBaseUrl=${DEPENDENCY_TRACK_BASE_URL} \
   -Ddependency-track.apiKey=${DEPENDENCY_TRACK_API_KEY}
+```
 
-### Add configuration for dependency-track
+### Add configuration for dependency-track and cyclonedx
 
 https://cyclonedx.github.io/cyclonedx-maven-plugin/plugin-info.html
-cyclonedx:makeAggregateBom
-cyclonedx:makeBom
-cyclonedx:makePackageBom
+* cyclonedx:makeAggregateBom
+* cyclonedx:makeBom
+* cyclonedx:makePackageBom
 
-``` cmd
-mvn cyclonedx:makeBom
-```
 
 https://github.com/pmckeown/dependency-track-maven-plugin#readme
 
-``` cmd
+``` pom.xml
+<pluginManagement>
+  <plugins>
+    <plugin>
+      <groupId>org.cyclonedx</groupId>
+      <artifactId>cyclonedx-maven-plugin</artifactId>
+      <version>2.7.9</version>
+    </plugin>
+    <plugin>
+      <groupId>io.github.pmckeown</groupId>
+      <artifactId>dependency-track-maven-plugin</artifactId>
+      <configuration>
+        <dependencyTrackBaseUrl>http://ppl-poz-pc0034:37011</dependencyTrackBaseUrl>
+        <apiKey>THNVSAaR1y9Cl1HDkpfFrqtZiPXzI839</apiKey>
+      </configuration>
+    </plugin>
+  </plugins>
+</pluginManagement>
+```
+
+``` shell
+mvn cyclonedx:makeBom
+```
+``` shell
 mvn io.github.pmckeown:dependency-track-maven-plugin:upload-bom
 ```
 
@@ -123,6 +145,9 @@ sudo systemctl enable ssh
 ```
 
 ### xfce
+
+Desktop Environment
+
 <https://www.xfce.org/>
 
 ```shell
@@ -238,7 +263,7 @@ ARP scanning
 #### NMap
 
 * <https://www.kali.org/tools/nmap/>
-* <https://nmap.org>
+* <https://nmap.oeixrg>
 * <https://nmap.org/book/toc>
 * <https://nmap.org/docs.html>
 
@@ -270,3 +295,19 @@ xsltproc <xml filne name> -o <new html file name>
 xsltproc 53.xml -o 53.html
 ```
 
+## Keycloak
+
+Wymaga javy potem sie rozpakowuje i uruchamia
+ ``` shell
+ $ bin/kc.sh start-dev
+ ```
+
+ ## Install on linux
+
+ ### Check sum
+
+ ```shell
+ shasum plik 
+ ```
+
+ 
