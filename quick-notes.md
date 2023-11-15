@@ -310,4 +310,13 @@ Wymaga javy potem sie rozpakowuje i uruchamia
  shasum plik 
  ```
 
+ ## Git SVN
+
+ <https://git-scm.com/docs/git-svn>
+
+ ```shell
+ git svn init -s 
+ git svn clone -s
+ ```
+
  
