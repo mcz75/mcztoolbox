@@ -310,13 +310,21 @@ Wymaga javy potem sie rozpakowuje i uruchamia
  shasum plik 
  ```
 
- ## Git SVN
+ ## Git
+
+ ### git svn
 
  <https://git-scm.com/docs/git-svn>
 
  ```shell
  git svn init -s 
  git svn clone -s
+ ```
+
+ ### Usunięcie referencji których nie ma zdalnie
+
+ ```shell
+ git remote prune origin
  ```
 
  
